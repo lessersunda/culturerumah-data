@@ -89,7 +89,7 @@ languages_path = '../lexirumah-data/languages.tsv'
 def import_languages():
     # TODO: be independent of the location of lexirumah-data, but do compare with it!
     languages = pandas.io.parsers.read_csv(
-        languages_path
+        languages_path,
         sep='\t',
         index_col="Language ID",
         encoding='utf-16')
@@ -336,7 +336,7 @@ def main(trust=[], sqlite=None):
             languages_path,
             sep='\t',
             encoding='utf-16')
-    if feauters_path not in trust:
+    if features_path not in trust:
         features.to_csv(
             features_path,
             sep='\t',
