@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import os
 import argparse
 import json
 import re
@@ -33,11 +34,14 @@ except ImportError:
     Dataset = Contributor = ContributionContributor = ValueSet = Value = Ignore
     Feature = GrambankContribution = GrambankLanguage = Ignore
 
-    ORDERED_ICONS = defaultdict(lambda: None)
+    class Icon:
+        name = None
+    ORDERED_ICONS = defaultdict(lambda: Icon())
     
     model_is_available=False
 
 def yield_domainelements(s):
+    done = {"?"}
     for m in re.split('\s*,|;\s*', re.sub('^multistate\s+', '', s.strip())):
         if m.strip():
             if m.startswith('As many'):
@@ -45,6 +49,11 @@ def yield_domainelements(s):
                     yield '%s' % i, '%s' % i
             else:
                 number, desc = m.split(':')
+                if number in done:
+                    raise ValueError("Value specified multiple times",
+                                     s)
+                else:
+                    done.add(number)
                 yield number.strip(), desc.strip()
     yield '?', 'Not known'
 
@@ -111,6 +120,8 @@ def report(problem, data1, data2):
     print("     [ ]")
     print()
 
+    
+copy_from_features = ["Feature", "Possible Values", "Suggested standardised comments"]
 def import_contribution(path, icons, features, languages, contributors={}, trust=[]):
     # look for metadata
     # look for sources
@@ -125,7 +136,7 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
     except KeyError:
         md["abstract"] = "Typological features of {:s}. Coded by {:s} following {:}.".format(
             md["language"],
-            md["creator"],
+            md["creator"][0],
             md["source"]+md["references"])  
       
     contrib = GrambankContribution(
@@ -136,14 +147,14 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
         ## We expect "source" to stand for primary linguistic data (audio files etc.),
         ## and "references" to point to bibliographic data.
         desc=md["abstract"])
-    contributor_name = HumanName(md["creator"])
+    contributor_name = HumanName(md["creator"][0])
     contributor_id = (contributor_name.last + contributor_name.first)
     try:
-        contributor = contributors[md["creator"]]
+        contributor = contributors[md["creator"][0]]
     except KeyError:
-        contributor = Contributor(
+        contributors[md["creator"][0]] = contributor = Contributor(
             id=contributor_id,
-            name=contributor_name)
+            name=str(contributor_name))
     DBSession.add(ContributionContributor(contribution=contrib, contributor=contributor))
 
     if mdpath not in trust:
@@ -154,6 +165,8 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             path,
             sep="," if path.endswith(".csv") else "\t",
             encoding='utf-16')
+
+    check_features = features.index.tolist()
 
     if "Language_ID" not in data.columns:
         data["Language_ID"] = md["language"]
@@ -167,26 +180,53 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             report(
                 "Language mismatch:",
                 md["language"],
-                data[data["Language_ID"] != md["language"]].to_string())
+                data["Language_ID"][data["Language_ID"] != md["language"]].to_string())
     language = languages.loc[md["language"]]
 
     if "Source" not in data.columns:
         data["Source"] = ""
-    if "Question" not in data.columns:
-        data["Question"] = ""
     if "Answer" not in data.columns:
         data["Answer"] = ""
 
-    data["Value"] = data["Value"].astype(int)
+    data["Value"] = data["Value"].astype(str)
     data["Source"] = data["Source"].astype(str)
-    data["Question"] = data["Question"].astype(str)
     data["Answer"] = data["Answer"].astype(str)
 
+    for column in copy_from_features:
+        if column not in data.columns:
+            data[column] = ""
+        data[column] = data[column].astype(str)
+
+    features_seen = {}
     for i, row in data.iterrows():
-        value = row['Value']
+        try:
+            value = int(row['Value'])
+        except ValueError:
+            value = row['Value']
         feature = row['Feature_ID']
-        assert not pandas.isnull(value)
-        assert not pandas.isnull(feature)
+
+        if pandas.isnull(feature):
+            if pandas.isnull(row['Feature']):
+                if path in trust:
+                    raise AssertionError("Row {:} without feature found".format(row))
+                else:
+                    report(
+                        "Row without feature found, dropping.",
+                        row.to_string(),
+                        "")
+                    del data.loc[i]
+                    continue
+            else:
+                candidates = features["Feature"]==row["Feature"]
+                if candidates.any():
+                    feature = candidates.argmax()
+                else:
+                    report(
+                        "Row without matching feature found, ignoring.",
+                        row.to_string(),
+                        "")
+                    continue
+
 
         try:
             parameter = features.loc[feature]
@@ -209,24 +249,28 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
                 else:
                     parameter = {}
 
-        question = row["Question"]
-        if question != parameter["Feature"]:
-            if path in trust:
-                if features_path in trust:
-                    raise AssertionError("Feature question mismatch!")
+        for column in copy_from_features:
+            question = row[column]
+            if (question != parameter[column]
+                and not (pandas.isnull(question) or question != "")):
+                if path in trust:
+                    if features_path in trust:
+                        raise AssertionError("{:s} mismatch!".format(column))
+                    else:
+                        parameter[column] = question
                 else:
-                    parameter["Feature"] = question
-            else:
-                if features_path in trust:
-                    data.set_value(i, "Question", parameter["Feature"])
-                else:
-                    print(trust)
-                    report(
-                        "Feature question mismatch!",
-                        question,
-                        parameter["Feature"])
+                    if features_path in trust:
+                        data.set_value(i, column, parameter[column])
+                    else:
+                        report(
+                            ("{:s} mismatch!".format(column)),
+                            question,
+                            parameter[column])
 
-        vs = ValueSet(
+        if feature in features_seen:
+            vs = features_seen[feature]
+        else:
+            vs = features_seen[feature] = ValueSet(
             id="{:s}-{:s}".format(md["language"], feature),
             parameter=parameter["db_Object"],
             language=language["db_Object"],
@@ -234,12 +278,11 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             source=row['Source'])
 
         domain = parameter["db_Domain"]   
-        name = str(row['Value'])
-        if name not in domain:
+        if str(value) not in domain:
             if path in trust:
                 deid = max(domain)+1
-                domainelement = domain[name] = DomainElement(
-                    id='{:s}-{:s}'.format(i, deid),
+                domainelement = domain[str(value)] = DomainElement(
+                    id='_{:s}-{:s}'.format(i, deid),
                     parameter=parameter['db_Object'],
                     abbr=deid,
                     name='{:s} - {:s}'.format(deid, desc),
@@ -250,10 +293,10 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
                 report(
                     "Feature domain mismatch:",
                     list(domain.keys()),
-                    name)
+                    value)
                 continue
         else:
-            domainelement = domain[name]
+            domainelement = domain[str(value)]
 
         answer = row["Answer"]
         if answer != domainelement.description:
@@ -266,24 +309,47 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
                 if features_path in trust:
                     data.set_value(i, "Answer", domainelement.description)
                 else:
-                    print(trust)
                     report(
                         "Feature domain element mismatch!",
                         answer,
                         domainelement.description)
-        
+
 
         DBSession.add(Value(
-                 id="{:s}-{:s}-{:s}".format(md["language"], feature, name),
+                 id="{:s}-{:s}-{:}".format(md["language"], feature, value if value!='?' else 'unknown'),
                  valueset=vs,
-                 name=name,
+                 name=str(value),
                  description=row['Comment'],
                  domainelement=domainelement))
 
         print(".", end="")
+    
+        if feature in check_features:
+            check_features.remove(feature)
+
+    if features_path in trust:
+        i = data.index.max()
+        for feature in check_features:
+            i += 1
+            for column in copy_from_features:
+                data.set_value(i, column, features[column][feature])
+            data.set_value(i, "Language_ID", md["language"])
+            data.set_value(i, "Feature_ID", feature)
+            data.set_value(i, "Value", "?")
+                
+
+    print()
     if path not in trust:
         data.sort_values(by=["Feature_ID", "Value"], inplace=True)
-        data = data[["Language_ID", "Feature_ID", "Question", "Value", "Answer", "Comment", "Source"]]
+        data = data[["Language_ID",
+                     "Feature_ID",
+                     "Feature",
+                     "Value",
+                     "Answer",
+                     "Comment",
+                     "Source",
+                     "Possible Values",
+                     "Suggested standardised comments"]]
         data.to_csv(
             path,
             index=False,
@@ -302,16 +368,18 @@ def import_cldf(srcdir, features, languages, trust=[]):
     for dirpath, dnames, fnames in os.walk(srcdir):
         for fname in fnames:
             if os.path.splitext(fname)[1] in ['.tsv', '.csv']:
+                print("Importing {:s}…".format(os.path.join(dirpath, fname)))
                 datasets[os.path.join(dirpath, fname)] = import_contribution(
                     os.path.join(dirpath, fname),
                     icons,
                     features,
                     languages,
                     trust=trust)
-                print("Imported {:s}.".format(os.path.join(dirpath, fname)))
+                print("Import done.")
     return datasets
 
-def main(trust=[], sqlite=None):
+
+def main(trust=[languages_path, features_path]):
     with open("metadata.json") as md:
         dataset_metadata = json.load(md)
     DBSession.add(
@@ -342,12 +410,21 @@ def main(trust=[], sqlite=None):
             sep='\t',
             encoding='utf-16')
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process GramRumah data with consistency in mind")
-    if model_is_available:
+import sys
+sys.argv=["i", "p:/My Documents/Database/grambank/development.ini"]
+
+if model_is_available:
+        from clld.scripts.util import initializedb
+        from clld.db.util import compute_language_sources
+        try:
+            initializedb(create=main, prime_cache=lambda x: None)
+        except SystemExit:
+            print("done")
+else:
+        parser = argparse.ArgumentParser(description="Process GramRumah data with consistency in mind")
         parser.add_argument("--sqlite", default=None, const="gramrumah.sqlite", nargs="?",
                             help="Generate an sqlite database from the data")
-    parser.add_argument("--trust", "-t", nargs="*", type=argparse.FileType("r"),
-                        help="Data files to be trusted in case of mismatch")
-    args = parser.parse_args()
-    main(args.trust, args.sqlite)
+        parser.add_argument("--trust", "-t", nargs="*", type=argparse.FileType("r"), default=[],
+                            help="Data files to be trusted in case of mismatch")
+        args = parser.parse_args()
+        main([x.name for x in args.trust])
