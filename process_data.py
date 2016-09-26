@@ -15,7 +15,8 @@ try:
     
     from clld.db.models.common import (
         Dataset, DomainElement, Contributor, ContributionContributor, ValueSet, Value)
-    from culturebank.models import Feature, CulturebankContribution, CulturebankLanguage
+    from culturebank.models import (
+        Feature, CulturebankContribution, CulturebankLanguage, Family)
 
     from clld.web.icon import ORDERED_ICONS
     
@@ -91,7 +92,7 @@ def import_features():
             name='{:s} - {:s}'.format(deid, desc),
             number=int(deid) if deid != '?' else 999,
             description=desc,
-            jsondata={'icon': ORDERED_ICONS[int(deid)].name} if deid != '?' else {})
+            jsondata={'icon': ORDERED_ICONS[int(deid)].name} if deid != '?' else {'icon': None})
          for deid, desc in yield_domainelements(d['Possible Values'])}
         for i, d in features.iterrows()]
     return features
@@ -104,11 +105,19 @@ def import_languages():
         sep='\t',
         index_col="Language ID",
         encoding='utf-16')
-    # TODO: Produce language objects
+    families = {
+        family: Family(
+            jsondata={
+                "icon": icon.name},
+            id=family,
+            name=family)
+        for family, icon in zip(set(languages["Family"]), ORDERED_ICONS)}
     languages["db_Object"] = [
         CulturebankLanguage(
             id=i,
             name=row['Language name (-dialect)'],
+            family=families[row['Family']],
+            macroarea=row['Region'],
             latitude=row['Lat'],
             longitude=row['Lon'])
         for i, row in languages.iterrows()]
@@ -318,7 +327,11 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
 
 
         DBSession.add(Value(
-                 id="{:s}-{:s}-{:}".format(md["language"], feature, value if value!='?' else 'unknown'),
+                 id="{:s}-{:s}-{:}{:d}".format(
+                     md["language"],
+                     feature,
+                     value if value!='?' else 'unknown',
+                     i),
                  valueset=vs,
                  name=str(value),
                  description=row['Comment'],
@@ -358,7 +371,7 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             sep="," if path.endswith(".csv") else "\t",
             encoding='utf-16')
     return data
-            
+
 
 def import_cldf(srcdir, features, languages, trust=[]):
     # loop over values
