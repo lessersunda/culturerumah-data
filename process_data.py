@@ -15,7 +15,7 @@ try:
     
     from clld.db.models.common import (
         Dataset, DomainElement, Contributor, ContributionContributor, ValueSet, Value)
-    from grambank.models import Feature, GrambankContribution, GrambankLanguage
+    from culturebank.models import Feature, CulturebankContribution, CulturebankLanguage
 
     from clld.web.icon import ORDERED_ICONS
     
@@ -32,7 +32,7 @@ except ImportError:
         def __init__(self, description, **kwargs):
             self.description = description
     Dataset = Contributor = ContributionContributor = ValueSet = Value = Ignore
-    Feature = GrambankContribution = GrambankLanguage = Ignore
+    Feature = CulturebankContribution = CulturebankLanguage = Ignore
 
     class Icon:
         name = None
@@ -49,6 +49,8 @@ def yield_domainelements(s):
                     yield '%s' % i, '%s' % i
             else:
                 number, desc = m.split(':')
+                if number == "?":
+                    continue
                 if number in done:
                     raise ValueError("Value specified multiple times",
                                      s)
@@ -62,7 +64,7 @@ def import_features():
     features = pandas.io.parsers.read_csv(
         features_path,
         sep='\t',
-        index_col="GramBank ID",
+        index_col="CultureBank ID",
         encoding='utf-16')
     features["db_Object"] = [
         Feature( 
@@ -71,15 +73,15 @@ def import_features():
             doc = d['Clarifying Comments'],
             patron = d['Feature patron'],
             std_comments = d['Suggested standardised comments'],
-            name_french = d['Feature question in French'],
-            jl_relevant_unit = d['Relevant unit(s)'],
-            jl_function = d['Function'],
-            jl_formal_means = d['Formal means'],
+            name_french = d['Feature question in Indonesian'],
+            #jl_relevant_unit = d['Relevant unit(s)'],
+            #jl_function = d['Function'],
+            #jl_formal_means = d['Formal means'],
             hard_to_deny = d['Very hard to deny'],
             prone_misunderstanding = d['Prone to misunderstandings among researchers'],
-            requires_extensive_data = d['Requires extensive data on the language'],
+            #requires_extensive_data = d['Requires extensive data on the language'],
             last_edited = d['Last edited'],
-            other_survey = d['Is there a typological survey that already covers this feature somehow?'])
+            other_survey = d['ID according to other cultural databases'])
         for i, d in features.iterrows()]
     features["db_Domain"] = [
         {deid: DomainElement(
@@ -104,7 +106,7 @@ def import_languages():
         encoding='utf-16')
     # TODO: Produce language objects
     languages["db_Object"] = [
-        GrambankLanguage(
+        CulturebankLanguage(
             id=i,
             name=row['Language name (-dialect)'],
             latitude=row['Lat'],
@@ -139,11 +141,11 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             md["creator"][0],
             md["source"]+md["references"])  
       
-    contrib = GrambankContribution(
+    contrib = CulturebankContribution(
         id=md["id"],
         name=md["name"],
         #sources=sources(md["source"]) + references(md["references"]),
-        ## GrambankContribution can't take sources arguments yet.
+        ## CulturebankContribution can't take sources arguments yet.
         ## We expect "source" to stand for primary linguistic data (audio files etc.),
         ## and "references" to point to bibliographic data.
         desc=md["abstract"])
@@ -411,7 +413,7 @@ def main(trust=[languages_path, features_path]):
             encoding='utf-16')
 
 import sys
-sys.argv=["i", "p:/My Documents/Database/grambank/development.ini"]
+sys.argv=["i", "p:/My Documents/Database/culturebank/development.ini"]
 
 if model_is_available:
         from clld.scripts.util import initializedb
@@ -421,8 +423,8 @@ if model_is_available:
         except SystemExit:
             print("done")
 else:
-        parser = argparse.ArgumentParser(description="Process GramRumah data with consistency in mind")
-        parser.add_argument("--sqlite", default=None, const="gramrumah.sqlite", nargs="?",
+        parser = argparse.ArgumentParser(description="Process CultureRumah data with consistency in mind")
+        parser.add_argument("--sqlite", default=None, const="culturerumah.sqlite", nargs="?",
                             help="Generate an sqlite database from the data")
         parser.add_argument("--trust", "-t", nargs="*", type=argparse.FileType("r"), default=[],
                             help="Data files to be trusted in case of mismatch")
