@@ -173,10 +173,11 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             json.dump(md, mdfile, indent=2)
 
     data = pandas.io.parsers.read_csv(
-            path,
-            sep="," if path.endswith(".csv") else "\t",
-            encoding='utf-16')
-
+        path,
+        sep="," if path.endswith(".csv") else "\t",
+        converters={"Value": str},
+        encoding='utf-16')
+    
     check_features = features.index.tolist()
 
     if "Language_ID" not in data.columns:
@@ -199,7 +200,6 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
     if "Answer" not in data.columns:
         data["Answer"] = ""
 
-    data["Value"] = data["Value"].astype(str)
     data["Source"] = data["Source"].astype(str)
     data["Answer"] = data["Answer"].astype(str)
 
@@ -213,7 +213,13 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
         try:
             value = int(row['Value'])
         except ValueError:
-            value = row['Value']
+            if row['Value'].endswith('.0'):
+                try:
+                    value = int(row['Value'][:-2])
+                except ValueError:
+                    value = row['Value']
+            else:
+                value = row['Value']
         feature = row['Feature_ID']
 
         if pandas.isnull(feature):
