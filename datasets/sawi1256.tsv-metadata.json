@@ -1,15 +1,15 @@
 {
-  "name": "SWT_HC_2015_10_26_cultural features.xlsx",
-  "id": "sawi1256",
+  "language": "sawi1256",
+  "references": [],
   "creator": [
     "?"
   ],
-  "comment": "",
-  "language": "sawi1256",
-  "references": [],
-  "abstract": "Typological features of sawi1256. Coded by ? following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/SWT_HC_2015_10_26_cultural features.xlsx'].",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/SWT_HC_2015_10_26_cultural features.xlsx"
   ],
-  "created": "['?']"
+  "abstract": "Typological features of sawi1256. Coded by ? following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/SWT_HC_2015_10_26_cultural features.xlsx'].",
+  "name": "SWT_HC_2015_10_26_cultural features.xlsx",
+  "id": "sawi1256",
+  "created": "['?']",
+  "comment": ""
 }

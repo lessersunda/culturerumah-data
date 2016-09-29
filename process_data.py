@@ -66,7 +66,7 @@ def import_features():
         features_path,
         sep='\t',
         index_col="CultureBank ID",
-        encoding='utf-16')
+        encoding='utf-8')
     features["db_Object"] = [
         Feature( 
             id = i,
@@ -176,7 +176,7 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
         path,
         sep="," if path.endswith(".csv") else "\t",
         converters={"Value": str},
-        encoding='utf-16')
+        encoding='utf-8')
     
     check_features = features.index.tolist()
 
@@ -375,7 +375,7 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             path,
             index=False,
             sep="," if path.endswith(".csv") else "\t",
-            encoding='utf-16')
+            encoding='utf-8')
     return data
 
 
@@ -424,12 +424,12 @@ def main(trust=[languages_path, features_path]):
         languages.to_csv(
             languages_path,
             sep='\t',
-            encoding='utf-16')
+            encoding='utf-8')
     if features_path not in trust:
         features.to_csv(
             features_path,
             sep='\t',
-            encoding='utf-16')
+            encoding='utf-8')
 
 import sys
 sys.argv=["i", "p:/My Documents/Database/culturebank/development.ini"]

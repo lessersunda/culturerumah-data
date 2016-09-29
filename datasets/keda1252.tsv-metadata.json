@@ -1,15 +1,15 @@
 {
-  "name": "KED_MK_2015_05_21_cultural features questionnaire.xlsx",
-  "id": "keda1252",
+  "language": "keda1252",
+  "references": [],
   "creator": [
     "Marian Klamer"
   ],
-  "comment": "",
-  "language": "keda1252",
-  "references": [],
-  "abstract": "Typological features of keda1252. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/KED_MK_2015_05_21_cultural features questionnaire.xlsx'].",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/KED_MK_2015_05_21_cultural features questionnaire.xlsx"
   ],
-  "created": "[Timestamp('2015-05-21 00:00:00')]"
+  "abstract": "Typological features of keda1252. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/KED_MK_2015_05_21_cultural features questionnaire.xlsx'].",
+  "name": "KED_MK_2015_05_21_cultural features questionnaire.xlsx",
+  "id": "keda1252",
+  "created": "[Timestamp('2015-05-21 00:00:00')]",
+  "comment": ""
 }

@@ -1,15 +1,15 @@
 {
-  "name": "TDT_Terik_MK_2016_01_14_cultural features questionnaire.xlsx",
-  "id": "tetu1245",
+  "language": "tetu1245",
+  "references": [],
   "creator": [
     "Marian Klamer"
   ],
-  "comment": "",
-  "language": "tetu1245",
-  "references": [],
-  "abstract": "Typological features of tetu1245. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/TDT_Terik_MK_2016_01_14_cultural features questionnaire.xlsx'].",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/TDT_Terik_MK_2016_01_14_cultural features questionnaire.xlsx"
   ],
-  "created": "[Timestamp('2016-01-14 00:00:00')]"
+  "abstract": "Typological features of tetu1245. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/TDT_Terik_MK_2016_01_14_cultural features questionnaire.xlsx'].",
+  "name": "TDT_Terik_MK_2016_01_14_cultural features questionnaire.xlsx",
+  "id": "tetu1245",
+  "created": "[Timestamp('2016-01-14 00:00:00')]",
+  "comment": ""
 }
