@@ -1,5 +1,5 @@
 {
-  "language": "lama1292",
+  "language": "sika1262",
   "references": [],
   "creator": [
     "Marian Klamer"
@@ -9,7 +9,7 @@
   ],
   "abstract": "Typological features of lama1292. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/HWA_MK_2015_05_14_cultural features questionnaire.xlsx'].",
   "name": "HWA_MK_2015_05_14_cultural features questionnaire.xlsx",
-  "id": "lama1292",
+  "id": "sika1262",
   "created": "[Timestamp('2015-05-14 00:00:00')]",
   "comment": ""
 }
