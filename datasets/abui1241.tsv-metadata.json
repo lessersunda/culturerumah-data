@@ -1,15 +1,15 @@
 {
-  "language": "abui1241",
-  "references": [],
   "creator": [
     "George Saad "
   ],
+  "language": "abui1241",
+  "id": "abui1241",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ABZ_TK_GS_2015_08_25_cultural features questionnaire.xlsx"
   ],
+  "references": [],
+  "comment": "",
   "abstract": "Typological features of abui1241. Coded by George Saad  following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ABZ_TK_GS_2015_08_25_cultural features questionnaire.xlsx'].",
-  "name": "ABZ_TK_GS_2015_08_25_cultural features questionnaire.xlsx",
-  "id": "abui1241",
   "created": "[Timestamp('2015-08-25 00:00:00')]",
-  "comment": ""
+  "name": "ABZ_TK_GS_2015_08_25_cultural features questionnaire.xlsx"
 }

@@ -1,15 +1,15 @@
 {
-  "language": "adon1237",
-  "references": [],
   "creator": [
     "Marian Klamer"
   ],
+  "language": "adon1237",
+  "id": "adon1237",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_AD_MK_2015_05_18_cultural features questionnaire.xlsx"
   ],
+  "references": [],
+  "comment": "",
   "abstract": "Typological features of adon1237. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_AD_MK_2015_05_18_cultural features questionnaire.xlsx'].",
-  "name": "LMH_AD_MK_2015_05_18_cultural features questionnaire.xlsx",
-  "id": "adon1237",
   "created": "[Timestamp('2015-05-18 00:00:00')]",
-  "comment": ""
+  "name": "LMH_AD_MK_2015_05_18_cultural features questionnaire.xlsx"
 }

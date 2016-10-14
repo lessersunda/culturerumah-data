@@ -1,15 +1,15 @@
 {
-  "language": "buna1278",
-  "references": [],
   "creator": [
     "Marian Klamer"
   ],
+  "language": "buna1278",
+  "id": "buna1278",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/BFN_Bobonaro_MK_2016_01_08_cultural features questionnaire.xlsx"
   ],
+  "references": [],
+  "comment": "",
   "abstract": "Typological features of buna1278. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/BFN_Bobonaro_MK_2016_01_08_cultural features questionnaire.xlsx'].",
-  "name": "BFN_Bobonaro_MK_2016_01_08_cultural features questionnaire.xlsx",
-  "id": "buna1278",
   "created": "[Timestamp('2016-01-08 00:00:00')]",
-  "comment": ""
+  "name": "BFN_Bobonaro_MK_2016_01_08_cultural features questionnaire.xlsx"
 }

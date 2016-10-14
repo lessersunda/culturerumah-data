@@ -1,15 +1,15 @@
 {
-  "language": "lama1278",
-  "references": [],
   "creator": [
     "Marian Klamer"
   ],
+  "language": "lama1278",
+  "id": "lama1278",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_LI_MK_2015_05_24_cultural features questionnaire.xlsx"
   ],
+  "references": [],
+  "comment": "",
   "abstract": "Typological features of lama1278. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_LI_MK_2015_05_24_cultural features questionnaire.xlsx'].",
-  "name": "LMH_LI_MK_2015_05_24_cultural features questionnaire.xlsx",
-  "id": "lama1278",
   "created": "[Timestamp('2015-05-24 00:00:00')]",
-  "comment": ""
+  "name": "LMH_LI_MK_2015_05_24_cultural features questionnaire.xlsx"
 }

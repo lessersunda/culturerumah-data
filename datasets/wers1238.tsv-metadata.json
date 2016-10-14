@@ -1,15 +1,15 @@
 {
-  "language": "wers1238",
-  "references": [],
   "creator": [
     "Hannah Choi"
   ],
+  "language": "wers1238",
+  "id": "wers1238",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/KVW_HC_2015_10_23_cultural features Wersing.xlsx"
   ],
+  "references": [],
+  "comment": "",
   "abstract": "Typological features of wers1238. Coded by Hannah Choi following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/KVW_HC_2015_10_23_cultural features Wersing.xlsx'].",
-  "name": "KVW_HC_2015_10_23_cultural features Wersing.xlsx",
-  "id": "wers1238",
   "created": "[Timestamp('2015-10-23 00:00:00')]",
-  "comment": ""
+  "name": "KVW_HC_2015_10_23_cultural features Wersing.xlsx"
 }

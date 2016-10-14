@@ -1,15 +1,15 @@
 {
-  "language": "kaer1234",
-  "references": [],
   "creator": [
     "Marian Klamer"
   ],
+  "language": "kaer1234",
+  "id": "kaer1234",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/JKA_MK_2016_05_14_cultural features Kaera.xlsx"
   ],
+  "references": [],
+  "comment": "",
   "abstract": "Typological features of kaer1234. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/JKA_MK_2016_05_14_cultural features Kaera.xlsx'].",
-  "name": "JKA_MK_2016_05_14_cultural features Kaera.xlsx",
-  "id": "kaer1234",
   "created": "[Timestamp('2016-05-18 00:00:00')]",
-  "comment": ""
+  "name": "JKA_MK_2016_05_14_cultural features Kaera.xlsx"
 }

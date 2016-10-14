@@ -1,115 +1,116 @@
-Language_ID	Feature_ID	Feature	Value	Answer	Comment	Source	Possible Values	Suggested standardised comments
-sawi1256	SD10_0		0.0			nan		
-sawi1256	SD10_1		1.0			nan		
-sawi1256	SD10_2		1.0			nan		
-sawi1256	SD10_3		1.0			nan		
-sawi1256	SD10_4		1.0			nan		
-sawi1256	SD10_5		1.0			nan		
-sawi1256	SD10_6		1.0			nan		
-sawi1256	SD10_7		1.0			nan		
-sawi1256	SD10_8		1.0			nan		
-sawi1256	SD10_9		1.0			nan		
-sawi1256	SD11_0		1.0			nan		
-sawi1256	SD11_1		1.0			nan		
-sawi1256	SD11_10		1.0			nan		
-sawi1256	SD11_11		1.0			nan		
-sawi1256	SD11_2		1.0			nan		
-sawi1256	SD11_3		1.0			nan		
-sawi1256	SD11_4		1.0			nan		
-sawi1256	SD11_5		1.0			nan		
-sawi1256	SD11_6		1.0			nan		
-sawi1256	SD11_7		1.0			nan		
-sawi1256	SD11_8		1.0			nan		
-sawi1256	SD11_9		1.0			nan		
-sawi1256	SD12_0		0.0			nan		
-sawi1256	SD12_1		0.0			nan		
-sawi1256	SD12_2		1.0			nan		
-sawi1256	SD12_3		1.0			nan		
-sawi1256	SD12_4		0.0			nan		
-sawi1256	SD12_5		1.0			nan		
-sawi1256	SD12_6		0.0			nan		
-sawi1256	SD13_0		0.0			nan		
-sawi1256	SD13_1		1.0			nan		
-sawi1256	SD13_2		0.0			nan		
-sawi1256	SD13_3		1.0			nan		
-sawi1256	SD13_4		1.0			nan		
-sawi1256	SD13_5		1.0			nan		
-sawi1256	SD13_6		1.0			nan		
-sawi1256	SD14_0		2.0			nan		
-sawi1256	SD14_1		1.0			nan		
-sawi1256	SD1_0		0.0			nan		
-sawi1256	SD1_1		0.0			nan		
-sawi1256	SD1_2		1.0			nan		
-sawi1256	SD1_3		1.0			nan		
-sawi1256	SD1_4		0.0			nan		
-sawi1256	SD1_5		1.0			nan		
-sawi1256	SD2_0		1.0			nan		
-sawi1256	SD2_1		1.0			nan		
-sawi1256	SD2_2		1.0			nan		
-sawi1256	SD2_3		1.0			nan		
-sawi1256	SD2_4		2.0			nan		
-sawi1256	SD2_5		16.0			nan		
-sawi1256	SD3_0		1.0			nan		
-sawi1256	SD3_1		1.0			nan		
-sawi1256	SD3_2		1.0			nan		
-sawi1256	SD3_3		2.0			nan		
-sawi1256	SD3_4		1.0			nan		
-sawi1256	SD3_5		0.0			nan		
-sawi1256	SD4_0		1.0			nan		
-sawi1256	SD4_1		1.0			nan		
-sawi1256	SD4_1		1.0			nan		
-sawi1256	SD4_2		1.0			nan		
-sawi1256	SD4_3		0.0			nan		
-sawi1256	SD4_4		1.0			nan		
-sawi1256	SD4_5		0.0			nan		
-sawi1256	SD4_6		1.0			nan		
-sawi1256	SD4_7		0.0			nan		
-sawi1256	SD4_8		1.0			nan		
-sawi1256	SD4_9		1.0			nan		
-sawi1256	SD5_1		1.0			nan		
-sawi1256	SD5_10		1.0			nan		
-sawi1256	SD5_11		1.0			nan		
-sawi1256	SD5_12		1.0			nan		
-sawi1256	SD5_13		5.0			nan		
-sawi1256	SD5_14		0.0			nan		
-sawi1256	SD5_15		12.0			nan		
-sawi1256	SD5_2		1.0			nan		
-sawi1256	SD5_3		0.0			nan		
-sawi1256	SD5_5		0.0			nan		
-sawi1256	SD5_6		1.0			nan		
-sawi1256	SD5_7		0.0			nan		
-sawi1256	SD5_8		1.0			nan		
-sawi1256	SD5_9		1.0			nan		
-sawi1256	SD6_0		0.0			nan		
-sawi1256	SD6_1		0.0			nan		
-sawi1256	SD6_2		1.0			nan		
-sawi1256	SD6_3		0.0			nan		
-sawi1256	SD6_4		2.0			nan		
-sawi1256	SD6_5		1.0			nan		
-sawi1256	SD6_6		1.0			nan		
-sawi1256	SD6_7		0.0			nan		
-sawi1256	SD6_8		12.0			nan		
-sawi1256	SD7_0		1.0			nan		
-sawi1256	SD7_1		2.0			nan		
-sawi1256	SD7_2		2.0			nan		
-sawi1256	SD7_3		0.0			nan		
-sawi1256	SD8_0		1.0			nan		
-sawi1256	SD8_1		0.0			nan		
-sawi1256	SD8_10		0.0			nan		
-sawi1256	SD8_11		1.0			nan		
-sawi1256	SD8_12		0.0			nan		
-sawi1256	SD8_3		0.0			nan		
-sawi1256	SD8_4		0.0			nan		
-sawi1256	SD8_5		1.0			nan		
-sawi1256	SD8_6		0.0			nan		
-sawi1256	SD8_7		0.0			nan		
-sawi1256	SD8_8		1.0			nan		
-sawi1256	SD8_9		2.0			nan		
-sawi1256	SD9_0		1.0			nan		
-sawi1256	SD9_1		1.0			nan		
-sawi1256	SD9_2		2.0			nan		
-sawi1256	SD9_3		0.0			nan		
-sawi1256	SD9_4		0.0			nan		
-sawi1256	SD9_5		1.0			nan		
-sawi1256	SD9_6		0.0			nan		
-sawi1256	SD9_7		1.0			nan		
+Feature_ID	Language_ID	Feature	Value	Answer	Comment	Source	Possible Values	Suggested standardised comments
+SD10_0	sawi1256	Are there specific vocabularies for hunting or use in the presence of avoidance kin?	0	No		nan	0:No;1:Yes	
+SD10_1	sawi1256	Is there ritual speech?	1	Yes		nan	0:No;1:Yes	
+SD10_2	sawi1256	Does the ritual speech involve parallellisms, dual symbolic categories?	1	Yes		nan	0:No;1:Yes	
+SD10_3	sawi1256	Is the ritual language known by everyone (or just by traditional leaders)?	1	Yes		nan	0:No;1:Yes	
+SD10_4	sawi1256	Are there ritual songs?	1	Yes		nan	1:Yes	
+SD10_5	sawi1256	Are there ritual dances?	1	Yes		nan	1:Yes	
+SD10_6	sawi1256	Is the language of the ritual songs a language you understand?	1	Yes		nan	1:Yes;11:some;10:yes > no	
+SD10_7	sawi1256	Is the language of the ritual songs a foreign language?	1	Yes		nan	0:No;1:Yes	
+SD10_8	sawi1256	Do women and men dance together?	1	Yes		nan	0:No;1:Yes	
+SD10_9	sawi1256	Are there traditional ceremonies where men and women must be separated?	1	Yes		nan	0:No;1:Yes	
+SD11_0	sawi1256	Is there a ceremony relating to planting/harvesting?	1	Yes		nan	1:Yes	
+SD11_1	sawi1256	Did your ancestors arrive in boats?	1	Yes		nan	0:No;1:Yes;2:some	
+SD11_10	sawi1256	Does sacrifice involve feeding of ancestors?	1	Yes		nan	0:No;1:Yes	
+SD11_11	sawi1256	Is there/are  there (a) ritual place(s)?	1	Yes		nan	1:Yes	
+SD11_2	sawi1256	Did your ancestors arrive as sea animals? (shark, crocodile, turtle, dolphin)	1	Yes		nan	0:No;1:Yes	
+SD11_3	sawi1256	Is there a myth about the origin of the people?	1	Yes		nan	0:No;1:Yes	
+SD11_4	sawi1256	Are there traditional religious leaders or specialists?	1	Yes		nan	0:No;1:Yes	
+SD11_5	sawi1256	Are there traditional drinks, or stimulants?	1	Yes		nan	1:Yes	
+SD11_6	sawi1256	Is there a traditional sacrifice place?	1	Yes		nan	1:Yes	
+SD11_7	sawi1256	Are there rituals around birth?	1	Yes		nan	0:No;1:Yes	
+SD11_8	sawi1256	Are there rituals around death?	1	Yes		nan	1:Yes	
+SD11_9	sawi1256	Are there seasonal rituals apart from planting and harvesting, for example is there a ritual to ask for rain? Or other rituals?	1	Yes		nan	1:Yes	
+SD12_0	sawi1256	Do women traditionally weave?	0	No		nan	0:No;1:Yes	
+SD12_1	sawi1256	Is there traditional pottery?	0	No		nan	0:No;1:Yes	
+SD12_2	sawi1256	Are there moko?	1	Yes		nan	0:No;1:Yes	
+SD12_3	sawi1256	Is it allowed to exchange the moko?	1	Yes		nan	0:No;1:Yes	
+SD12_4	sawi1256	Are there people who make new moko?	0	No		nan	0:No	
+SD12_5	sawi1256	Are there traditional music instruments?	1	Yes		nan	0:No;1:Yes	
+SD12_6	sawi1256	Are there particular traditional music styles?	0	No		nan	0:No;1:Yes;10:yes > no	
+SD13_0	sawi1256	Do people use body paint or tattoo?	0	No		nan	0:No;1:Yes	
+SD13_1	sawi1256	Were teeth traditionally filed? (i.e. made shorter with a file)	1	Yes		nan	0:No;1:Yes	
+SD13_2	sawi1256	Are there typical traditional haircuts?	0	No		nan	0:No;1:Yes	
+SD13_3	sawi1256	Traditional piercings?	1	Yes		nan	0:No;1:Yes	
+SD13_4	sawi1256	Are feathers or beads used as adornments?	1	Yes		nan	0:No;1:Yes	
+SD13_5	sawi1256	Is there traditional jewelry?	1	Yes		nan	0:No;1:Yes	
+SD13_6	sawi1256	Is there special adornment used in rituals or ceremonies?	1	Yes		nan	1:Yes;10:yes > no	
+SD14_0	sawi1256	Is spatial organization divided into primary and secondary type?	2	Primary		nan	0:No;2:Primary;1:Yes	
+SD14_1	sawi1256	Are there conceptual connections between spatial directions such as E+S / W + N with male/female, or with day/night, or with right/left?	1	Yes		nan	0:No;1:Yes	
+SD1_0	sawi1256	Do adults in this village typically speak more than one local language?	0	No		nan	0:No;1:Yes	
+SD1_1	sawi1256	Do children typically speak more than one local language?	0	No		nan	0:No;1:Yes	
+SD1_2	sawi1256	Is it common in this village that husband and wife have different languages?	1	Yes		nan	0:No;1:Yes	
+SD1_3	sawi1256	Does a wife learn to speak the language of her husband?	1	Yes		nan	1:Yes	
+SD1_4	sawi1256	Does a husband learn to speak the language of his wife?	0	No		nan	0:No;1:Yes	
+SD1_5	sawi1256	Do they communicate with a third language?	1	Yes		nan	0:No;1:Yes;2:yes / no	
+SD2_0	sawi1256	Do people traditionally hunt?	1	Yes		nan	1:Yes	
+SD2_1	sawi1256	Do people traditionally fish in the sea?	1	Yes		nan	0:No;1:Yes	
+SD2_2	sawi1256	Do people traditionally have animal husbandry?	1	Yes		nan	1:Yes	
+SD2_3	sawi1256	Do people traditionally have agriculture?	1	Yes		nan	1:Yes	
+SD2_4	sawi1256	Intensity of cultivation?	2	2		nan	2:2;4:2 / 3;7:2 / 3 / 4;5:2 > 3 /4;3:3;6:3 / 4	
+SD2_5	sawi1256	Major crops?	16	1 /2 /4		nan	1:1;10:1 / 2;11:1 / 2 / 3;13:1 / 2 / 3 / 4;14:1 / 2 / 4;15:1 / 3;12:1 / 4;16:1 /2 /4;2:2	
+SD3_0	sawi1256	Are there clans?	1	Yes		nan	1:Yes	
+SD3_1	sawi1256	Are there moieties?	1	Yes		nan	0:No;1:Yes	
+SD3_2	sawi1256	Is there a concept of 'house' (uma/rumah) that equals a descent group?	1	Yes		nan	0:No;1:Yes	
+SD3_3	sawi1256	Are clans matrilineal	2	???		nan	2:???;0:No;1:Yes	
+SD3_4	sawi1256	Are clans, subclans or lineages ranked	1	Yes		nan	0:No;1:Yes	
+SD3_5	sawi1256	Does every clan speak their own language?	0	No		nan	0:No	
+SD4_0	sawi1256	Is real property (land) inherited?	1	Yes		nan	1:Yes	
+SD4_1	sawi1256	Did one person (lord / clan) originally own all the land?	1	Yes		nan	0:No;1:Yes	
+SD4_1	sawi1256	Did one person (lord / clan) originally own all the land?	1	Yes		nan	0:No;1:Yes	
+SD4_2	sawi1256	Are there inheritance rules?	1	Yes		nan	1:Yes	
+SD4_3	sawi1256	Is land inheritance matrilineal (sister's sons; sister's younger brother)?	0	No		nan	0:No;1:Yes	
+SD4_4	sawi1256	Is land inheritance patrilineal (sons)?	1	Yes		nan	0:No;1:Yes	
+SD4_5	sawi1256	Is moveable property inheritance matrilineal (sister's sons; sister's younger brother)?	0	No		nan	0:No;1:Yes	
+SD4_6	sawi1256	Is moveable property inheritance patrilineal?	1	Yes		nan	0:No;1:Yes	
+SD4_7	sawi1256	Do all children inherit, sons and daughters alike?	0	No		nan	0:No;1:Yes	
+SD4_8	sawi1256	Do all children inherit, with daughters receiving less?	1	Yes		nan	0:No;1:Yes	
+SD4_9	sawi1256	Can newcomers aquire land or gardens?	1	Yes		nan	0:No;1:Yes	
+SD5_0	sawi1256	At what age should young people get married?	?	Not known		nan	13:17-30+ men / 13-25 women;10:20+ men / 20+ women;16:20-25 men / 17-18 women;18:20-30 men / 16-28 women;14:20-30 men /16-28 women;11:25-30 men / 18-30 women;17:27-28 men / 27-28 women;20:30 men / 20 women > 17-19 men / 15 women;12:30 men / 25 women;19:30+ men / 20+ women > 25 men / 20+ women ;15:30+ men / 30+ women > 17-20+ men / 16-20+ women;1:Yes	
+SD5_1	sawi1256	Are there marriage rules – specify in notes field	1	Yes		nan	1:Yes;2:Yes > no	
+SD5_10	sawi1256	Is there gift exchange between bride's and groom's sides?	1	Yes		nan	0:No;1:Yes	
+SD5_11	sawi1256	Is there bride service?	1	Yes		nan	0:No;1:Yes	
+SD5_12	sawi1256	Transfer of residence at marriage?	1	1		nan	1:1;4:1 / 3;2:2;3:3	
+SD5_13	sawi1256	Marital residence with kin?	5	5		nan	1:1;7:1 / 3;3:3;6:3 / 5;5:5	
+SD5_14	sawi1256	Are traditional marriages obligatorily exogamous?	0	No		nan	0:No;1:Yes	
+SD5_15	sawi1256	If mother dies, who raises the children?	12	Father and his family.		nan	12:Father and his family.;10:Father and/or his family;11:Mother and/or her family	
+SD5_2	sawi1256	Does a man typically marry a woman of his mother's subclan?	1	Yes		nan	0:No;1:Yes	
+SD5_3	sawi1256	Does a woman typicaly marry a man of her father’s subclan?	0	No		nan	0:No	
+SD5_5	sawi1256	Are there locality-based restrictions on marriage	0	No		nan	0:No;1:Yes	
+SD5_6	sawi1256	Was polygamy permitted	1	Yes		nan	0:No;1:Yes;2:yes > no	
+SD5_7	sawi1256	Was polyandry permitted?	0	No		nan	0:No	
+SD5_8	sawi1256	Is bridewealth paid by the groom's side to the bride's side	1	Yes		nan	1:Yes	
+SD5_9	sawi1256	Is dowry paid by the bride's side to the groom's side	1	Yes		nan	1:Yes	
+SD6_0	sawi1256	Are villages the typical settlement pattern?	0	No		nan	0:No;1:Yes;2:no > yes	
+SD6_1	sawi1256	Are dispersed solitary family homesteads the typical settlement pattern?	0	No		nan	0:No;1:Yes;2:yes > no	
+SD6_2	sawi1256	Are settlements permanent?	1	Yes		nan	1:Yes	
+SD6_3	sawi1256	Are villages/hamlets centered on a group of related women	0	No		nan	0:No;1:Yes	
+SD6_4	sawi1256	Mean size of local communities?	2	2		nan	2:2;10:4 /5;5:5;6:6	
+SD6_5	sawi1256	Are villages/hamlets centered on a group of related men?	1	Yes		nan	0:No;1:Yes	
+SD6_6	sawi1256	Are villages/hamlets (traditionally) located on hill tops?	1	Yes		nan	0:No;1:Yes	
+SD6_7	sawi1256	Are villages/hamlets (tradtionally) located on the shore?	0	No		nan	0:No;1:Yes	
+SD6_8	sawi1256	Do villages have places or spaces for gatherings?	12	1 /3		nan	1:1;13:1 / 2;11:1 / 2 / 3;12:1 /3;2:2;10:They do	
+SD7_0	sawi1256	Shape of (traditional) houses?	1	1		nan	1:1;2:1 / 2	
+SD7_1	sawi1256	Floor level of traditional houses?	2	2		nan	1:1;4:1 / 2;2:2;3:3	
+SD7_2	sawi1256	Shape of roof of traditional houses?	2	2		nan	3:1 / 4;2:2;4:4	
+SD7_3	sawi1256	Is there an attic or loft in a traditional house?	0	No		nan	0:No;1:Yes	
+SD8_0	sawi1256	Do leaders come from particular lineages?	1	Yes		nan	0:No;1:Yes	
+SD8_1	sawi1256	Are leaders non-hereditary?	0	No		nan	1:1;2:2;0:No;3:yes > no / 1	
+SD8_10	sawi1256	Are there groups with whom traditional relations are forbidden?	0	No		nan	0:No;1:Yes	
+SD8_11	sawi1256	Are there groups with whom there has been war?	1	Yes		nan	0:No;1:Yes	
+SD8_12	sawi1256	Is there an opposition between people of the interior and people of the shore?	0	No		nan	0:No;1:Yes	
+SD8_3	sawi1256	Are there female community/clan leaders	0	No		nan	0:No	
+SD8_4	sawi1256	Are there men’s houses	0	No		nan	0:No;1:Yes;10:yes > no	
+SD8_5	sawi1256	Are there (traditional)   rulers/kings?	1	Yes		nan	0:No;1:Yes	
+SD8_6	sawi1256	Are there slaves?	0	No		nan	0:No;1:Yes	
+SD8_7	sawi1256	Is there a concept for both ruler and foreigner, stranger king?	0	No		nan	0:No	
+SD8_8	sawi1256	Are there traditional relations/alliances with one or more neighbouring groups?	1	Yes		nan	0:No;1:Yes	
+SD8_9	sawi1256	Is there a special name for this alliance?	2	talipasa		nan	0:No;1:Yes;2:talipasa	
+SD9_0	sawi1256	Is namesake ritually marked, or with features reminiscent of particular kinship relations?	1	Yes		nan	10:Given Abui name upon birth given by  parents;0:No;1:Yes	
+SD9_1	sawi1256	Do descent groups own sets of personal names?	1	Yes		nan	0:No;1:Yes;2:yes / no	
+SD9_2	sawi1256	Are names taken from the father's group?	2	Father's group		nan	2:Father's group;0:No;1:Yes	
+SD9_3	sawi1256	Are names taken from the mother's group?	0	No		nan	0:No;1:Yes	
+SD9_4	sawi1256	Are there name taboos?	0	No		nan	0:No;1:Yes	
+SD9_5	sawi1256	Are there particular relations not to be addressed, or mentioned, by name	1	Yes		nan	0:No;1:Yes	
+SD9_6	sawi1256	did your language (or a group of people defined by speaking the language) traditionally have a name, other than a locality name	0	No		nan	0:No;1:Yes	
+SD9_7	sawi1256	Is there a special word to refer to a foreigner?	1	Yes		nan	0:No;1:Yes	

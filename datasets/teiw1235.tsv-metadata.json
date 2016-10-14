@@ -1,15 +1,15 @@
 {
-  "language": "teiw1235",
-  "references": [],
   "creator": [
     "Marian Klamer"
   ],
+  "language": "teiw1235",
+  "id": "teiw1235",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/TWE_MK_2016_05_13_cultural features.xlsx"
   ],
+  "references": [],
+  "comment": "",
   "abstract": "Typological features of teiw1235. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/TWE_MK_2016_05_13_cultural features.xlsx'].",
-  "name": "TWE_MK_2016_05_13_cultural features.xlsx",
-  "id": "teiw1235",
   "created": "[Timestamp('2016-05-19 00:00:00')]",
-  "comment": ""
+  "name": "TWE_MK_2016_05_13_cultural features.xlsx"
 }

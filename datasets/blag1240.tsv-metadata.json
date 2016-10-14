@@ -1,15 +1,15 @@
 {
-  "language": "blag1240",
-  "references": [],
   "creator": [
     "Marian Klamer"
   ],
+  "language": "blag1240",
+  "id": "blag1240",
   "source": [
     "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/BEU_Pura_MK_2016_05_10_cultural features.xlsx"
   ],
+  "references": [],
+  "comment": "",
   "abstract": "Typological features of blag1240. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/BEU_Pura_MK_2016_05_10_cultural features.xlsx'].",
-  "name": "BEU_Pura_MK_2016_05_10_cultural features.xlsx",
-  "id": "blag1240",
   "created": "[Timestamp('2016-05-17 00:00:00')]",
-  "comment": ""
+  "name": "BEU_Pura_MK_2016_05_10_cultural features.xlsx"
 }
