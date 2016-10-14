@@ -12,14 +12,14 @@ from nameparser import HumanName
 
 try:
     from clld.db.meta import DBSession
-    
+
     from clld.db.models.common import (
         Dataset, DomainElement, Contributor, ContributionContributor, ValueSet, Value)
     from culturebank.models import (
         Feature, CulturebankContribution, CulturebankLanguage, Family)
 
     from clld.web.icon import ORDERED_ICONS
-    
+
     model_is_available=True
 except ImportError:
     class DummyDBSession:
@@ -38,7 +38,7 @@ except ImportError:
     class Icon:
         name = None
     ORDERED_ICONS = defaultdict(lambda: Icon())
-    
+
     model_is_available=False
 
 def yield_domainelements(s):
@@ -50,7 +50,7 @@ def yield_domainelements(s):
                     yield '%s' % i, '%s' % i
             else:
                 number, desc = m.split(':')
-                if number == "?":
+                if number == '?':
                     continue
                 if number in done:
                     raise ValueError("Value specified multiple times",
@@ -74,7 +74,7 @@ def import_features():
             doc = d['Clarifying Comments'],
             patron = d['Feature patron'],
             std_comments = d['Suggested standardised comments'],
-            name_french = d['Feature question in Indonesian'],
+            name_french = d['Feature prompt in Indonesian'],
             #jl_relevant_unit = d['Relevant unit(s)'],
             #jl_function = d['Function'],
             #jl_formal_means = d['Formal means'],
@@ -82,7 +82,7 @@ def import_features():
             prone_misunderstanding = d['Prone to misunderstandings among researchers'],
             #requires_extensive_data = d['Requires extensive data on the language'],
             last_edited = d['Last edited'],
-            other_survey = d['ID according to other cultural databases'])
+            other_survey = d['ID/Reference according to other cultural databases'])
         for i, d in features.iterrows()]
     features["db_Domain"] = [
         {deid: DomainElement(
@@ -104,7 +104,7 @@ def import_languages():
         languages_path,
         sep='\t',
         index_col="Language ID",
-        encoding='utf-16')
+        encoding='utf-8')
     families = {
         family: Family(
             jsondata={
@@ -131,13 +131,25 @@ def report(problem, data1, data2):
     print("     [ ]")
     print()
 
-    
+def possibly_int_string(value):
+    try:
+        return str(int(value))
+    except ValueError:
+        try:
+            v = float(value)
+        except ValueError:
+            return str(value)
+        if int(v) == v:
+            return str(int(v))
+        else:
+            return str(v)
+
 copy_from_features = ["Feature", "Possible Values", "Suggested standardised comments"]
 def import_contribution(path, icons, features, languages, contributors={}, trust=[]):
     # look for metadata
     # look for sources
     # then loop over values
-    
+
     mdpath = path + '-metadata.json'
     with open(mdpath) as mdfile:
         md = json.load(mdfile)
@@ -149,7 +161,7 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             md["language"],
             md["creator"][0],
             md["source"]+md["references"])  
-      
+
     contrib = CulturebankContribution(
         id=md["id"],
         name=md["name"],
@@ -173,11 +185,10 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             json.dump(md, mdfile, indent=2)
 
     data = pandas.io.parsers.read_csv(
-        path,
-        sep="," if path.endswith(".csv") else "\t",
-        converters={"Value": str},
-        encoding='utf-8')
-    
+            path,
+            sep="," if path.endswith(".csv") else "\t",
+            encoding='utf-8')
+
     check_features = features.index.tolist()
 
     if "Language_ID" not in data.columns:
@@ -200,6 +211,7 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
     if "Answer" not in data.columns:
         data["Answer"] = ""
 
+    data["Value"] = data["Value"].astype(str)
     data["Source"] = data["Source"].astype(str)
     data["Answer"] = data["Answer"].astype(str)
 
@@ -210,16 +222,8 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
 
     features_seen = {}
     for i, row in data.iterrows():
-        try:
-            value = int(row['Value'])
-        except ValueError:
-            if row['Value'].endswith('.0'):
-                try:
-                    value = int(row['Value'][:-2])
-                except ValueError:
-                    value = row['Value']
-            else:
-                value = row['Value']
+        value = possibly_int_string(row['Value'])
+        data.set_value(i, 'Value', value)
         feature = row['Feature_ID']
 
         if pandas.isnull(feature):
@@ -283,6 +287,9 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
                             ("{:s} mismatch!".format(column)),
                             question,
                             parameter[column])
+            else:
+                data.set_value(i, column, parameter[column])
+
 
         if feature in features_seen:
             vs = features_seen[feature]
@@ -294,11 +301,11 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             contribution=contrib,
             source=row['Source'])
 
-        domain = parameter["db_Domain"]   
-        if str(value) not in domain:
+        domain = parameter["db_Domain"]
+        if value not in domain:
             if path in trust:
                 deid = max(domain)+1
-                domainelement = domain[str(value)] = DomainElement(
+                domainelement = domain[value] = DomainElement(
                     id='_{:s}-{:s}'.format(i, deid),
                     parameter=parameter['db_Object'],
                     abbr=deid,
@@ -308,12 +315,12 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
                     jsondata={'icon': ORDERED_ICONS[int(deid)].name})
             else:
                 report(
-                    "Feature domain mismatch:",
+                    "Feature domain mismatch for {:s}:".format(feature),
                     list(domain.keys()),
                     value)
                 continue
         else:
-            domainelement = domain[str(value)]
+            domainelement = domain[value]
 
         answer = row["Answer"]
         if answer != domainelement.description:
@@ -344,7 +351,7 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
                  domainelement=domainelement))
 
         print(".", end="")
-    
+
         if feature in check_features:
             check_features.remove(feature)
 
@@ -357,20 +364,25 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
             data.set_value(i, "Language_ID", md["language"])
             data.set_value(i, "Feature_ID", feature)
             data.set_value(i, "Value", "?")
-                
+
 
     print()
     if path not in trust:
         data.sort_values(by=["Feature_ID", "Value"], inplace=True)
-        data = data[["Language_ID",
-                     "Feature_ID",
-                     "Feature",
-                     "Value",
-                     "Answer",
-                     "Comment",
-                     "Source",
-                     "Possible Values",
-                     "Suggested standardised comments"]]
+        columns = list(data.columns)
+        first_columns = ["Feature_ID",
+                         "Language_ID",
+                         "Feature",
+                         "Value",
+                         "Answer",
+                         "Comment",
+                         "Source",
+                         "Possible Values",
+                         "Suggested standardised comments"]
+        for column in columns:
+            if column not in first_columns:
+                first_columns.append(column)
+        data = data[first_columns]
         data.to_csv(
             path,
             index=False,
@@ -400,7 +412,7 @@ def import_cldf(srcdir, features, languages, trust=[]):
     return datasets
 
 
-def main(trust=[languages_path, features_path]):
+def main(config=None, trust=[languages_path, features_path]):
     with open("metadata.json") as md:
         dataset_metadata = json.load(md)
     DBSession.add(
@@ -432,7 +444,7 @@ def main(trust=[languages_path, features_path]):
             encoding='utf-8')
 
 import sys
-sys.argv=["i", "p:/My Documents/Database/culturebank/development.ini"]
+sys.argv=["i", "../culturebank/sqlite.ini"]
 
 if model_is_available:
         from clld.scripts.util import initializedb
@@ -443,7 +455,7 @@ if model_is_available:
             print("done")
 else:
         parser = argparse.ArgumentParser(description="Process CultureRumah data with consistency in mind")
-        parser.add_argument("--sqlite", default=None, const="culturerumah.sqlite", nargs="?",
+        parser.add_argument("--sqlite", default=None, const="gramrumah.sqlite", nargs="?",
                             help="Generate an sqlite database from the data")
         parser.add_argument("--trust", "-t", nargs="*", type=argparse.FileType("r"), default=[],
                             help="Data files to be trusted in case of mismatch")
