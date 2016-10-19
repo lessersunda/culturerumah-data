@@ -1,15 +1,15 @@
 {
+  "abstract": "Typological features of lama1292. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/HWA_MK_2015_05_14_cultural features questionnaire.xlsx'].",
+  "comment": "",
+  "created": "[Timestamp('2015-05-14 00:00:00')]",
   "creator": [
     "Marian Klamer"
   ],
-  "language": "sika1262",
-  "id": "sika1262",
-  "source": [
-    "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/HWA_MK_2015_05_14_cultural features questionnaire.xlsx"
-  ],
+  "id": "lama1292",
+  "language": "lama1292",
+  "name": "HWA_MK_2015_05_14_cultural features questionnaire.xlsx",
   "references": [],
-  "comment": "",
-  "abstract": "Typological features of lama1292. Coded by Marian Klamer following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/HWA_MK_2015_05_14_cultural features questionnaire.xlsx'].",
-  "created": "[Timestamp('2015-05-14 00:00:00')]",
-  "name": "HWA_MK_2015_05_14_cultural features questionnaire.xlsx"
+  "source": [
+    "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/HWA_MK_2015_05_14_cultural features questionnaire.xlsx"
+  ]
 }

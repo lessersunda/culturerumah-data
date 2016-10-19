@@ -1,15 +1,15 @@
 {
+  "abstract": "Typological features of adan1251. Coded by Hannah following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ADN_HC_2015_09_23_cultural features Adang.xlsx'].",
+  "comment": "",
+  "created": "[Timestamp('2015-09-23 00:00:00')]",
   "creator": [
     "Hannah"
   ],
-  "language": "adan1251",
   "id": "adan1251",
-  "source": [
-    "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ADN_HC_2015_09_23_cultural features Adang.xlsx"
-  ],
+  "language": "adan1251",
+  "name": "ADN_HC_2015_09_23_cultural features Adang.xlsx",
   "references": [],
-  "comment": "",
-  "abstract": "Typological features of adan1251. Coded by Hannah following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ADN_HC_2015_09_23_cultural features Adang.xlsx'].",
-  "created": "[Timestamp('2015-09-23 00:00:00')]",
-  "name": "ADN_HC_2015_09_23_cultural features Adang.xlsx"
+  "source": [
+    "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ADN_HC_2015_09_23_cultural features Adang.xlsx"
+  ]
 }

@@ -1,15 +1,15 @@
 {
+  "abstract": "Typological features of levu1239. Coded by Hanna Fricke following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx'].",
+  "comment": "",
+  "created": "[Timestamp('2015-08-02 00:00:00')]",
   "creator": [
     "Hanna Fricke"
   ],
-  "language": "levu1239",
   "id": "levu1239",
-  "source": [
-    "j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx"
-  ],
+  "language": "levu1239",
+  "name": "LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx",
   "references": [],
-  "comment": "",
-  "abstract": "Typological features of levu1239. Coded by Hanna Fricke following ['j:/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx'].",
-  "created": "[Timestamp('2015-08-02 00:00:00')]",
-  "name": "LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx"
+  "source": [
+    "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx"
+  ]
 }
