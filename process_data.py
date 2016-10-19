@@ -182,7 +182,7 @@ def import_contribution(path, icons, features, languages, contributors={}, trust
 
     if mdpath not in trust:
         with open(mdpath, "w") as mdfile:
-            json.dump(md, mdfile, indent=2)
+            json.dump(md, mdfile, indent=2, sort_keys=True)
 
     data = pandas.io.parsers.read_csv(
             path,
@@ -444,7 +444,8 @@ def main(config=None, trust=[languages_path, features_path]):
             encoding='utf-8')
 
 import sys
-sys.argv=["i", "../culturebank/sqlite.ini"]
+import culturebank
+sys.argv=["i", os.path.join(os.path.dirname(os.path.dirname(culturebank.__file__)), "sqlite.ini")]
 
 if model_is_available:
         from clld.scripts.util import initializedb
