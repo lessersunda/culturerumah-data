@@ -1,14 +1,77 @@
 {
-  "abstract": "Typological features of kaer1234. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/JKA_MK_2016_05_14_cultural features Kaera.xlsx'].",
-  "comment": "",
+  "abstract": "Typological features of kaer1234. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/JKA_MK_2016_05_14_cultural features Kaera.xlsx', 'Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.', 'Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ', 'http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts', 'Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).', 'Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual'].",
   "created": "[Timestamp('2016-05-18 00:00:00')]",
   "creator": [
     "Marian Klamer"
   ],
+  "data_collection": [
+    {
+      "Date": null,
+      "Location": "Abangiwang, Pantar island, -8.404666, 124.217502",
+      "Recorded by": "Marian Klamer",
+      "Speaker code": "SPL",
+      "Speakers": "Simon O. Puling Leng (1-7-1947)"
+    },
+    {
+      "Date": NaN,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "WB",
+      "Speakers": "Wilhelmus Bako (1-7-1948)"
+    },
+    {
+      "Date": NaN,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "LS",
+      "Speakers": "Lamekh Sing (2-4-1960)"
+    },
+    {
+      "Date": NaN,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "YM",
+      "Speakers": "Yunus Mace (4-6-1969)"
+    },
+    {
+      "Date": NaN,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "OT",
+      "Speakers": "Obeth Tuati (16-12-1965)"
+    },
+    {
+      "Date": NaN,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "NL",
+      "Speakers": "Nestho Leko (11-11-1975)"
+    },
+    {
+      "Date": NaN,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "ATP",
+      "Speakers": "Albert Trayan Puling (27-4-1935) (the main speaker with the hat)"
+    },
+    {
+      "Date": "Analysis of interview and data entry was done on 18-19  May 2016 in Kalabahi, in collaboration with Bpk. Yopie Menase Laumaley (Kaera speaker) and Bpk. Amos Sir (Teiwa speaker who was also present at the interview). Some information was added or clarified using their comments, i.e. is not in the recording itself.",
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": NaN,
+      "Speakers": NaN
+    }
+  ],
   "id": "kaer1234",
   "language": "kaer1234",
   "name": "JKA_MK_2016_05_14_cultural features Kaera.xlsx",
-  "references": [],
+  "references": [
+    "Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.",
+    "Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ",
+    "http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts",
+    "Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).",
+    "Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual"
+  ],
   "source": [
     "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/JKA_MK_2016_05_14_cultural features Kaera.xlsx"
   ]

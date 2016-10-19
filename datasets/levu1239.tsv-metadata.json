@@ -1,14 +1,28 @@
 {
-  "abstract": "Typological features of levu1239. Coded by Hanna Fricke following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx'].",
-  "comment": "",
+  "abstract": "Typological features of levu1239. Coded by Hanna Fricke following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx', 'Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.', 'Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ', 'http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts', 'Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).', 'Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual'].",
   "created": "[Timestamp('2015-08-02 00:00:00')]",
   "creator": [
     "Hanna Fricke"
   ],
+  "data_collection": [
+    {
+      "Date": "2015-08-02 00:00:00",
+      "Location": "Lewaji, Kecamatan Atadei, Kabupaten Lembata, NTT, Indonesia",
+      "Recorded by": "Hanna Fricke",
+      "Speaker code": NaN,
+      "Speakers": NaN
+    }
+  ],
   "id": "levu1239",
   "language": "levu1239",
   "name": "LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx",
-  "references": [],
+  "references": [
+    "Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.",
+    "Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ",
+    "http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts",
+    "Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).",
+    "Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual"
+  ],
   "source": [
     "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LH_HF_2015_C Lembata_Lewaji_2015_08_02_cultural features.xlsx"
   ]

@@ -1,14 +1,45 @@
 {
-  "abstract": "Typological features of teiw1235. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/TWE_MK_2016_05_13_cultural features.xlsx'].",
-  "comment": "",
+  "abstract": "Typological features of teiw1235. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/TWE_MK_2016_05_13_cultural features.xlsx', 'Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.', nan, 'Data entry by Marian Klamer, 19 May 2016 in Kalabahi, Alor island', 'Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ', 'http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts', nan, 'Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).', 'Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual'].",
   "created": "[Timestamp('2016-05-19 00:00:00')]",
   "creator": [
     "Marian Klamer"
   ],
+  "data_collection": [
+    {
+      "Date": null,
+      "Location": "Tamalabang, Pantar island,-8.415345, 124.209092",
+      "Recorded by": "Marian Klamer",
+      "Speaker code": NaN,
+      "Speakers": "Zacharias Lalang Blegar (Lebang 1944), Paulus Sir (Lebang, May 1945), Amos Sir (Balungada, 16-5-1955)"
+    },
+    {
+      "Date": NaN,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": NaN,
+      "Speakers": NaN
+    },
+    {
+      "Date": "Data entry by Marian Klamer, 19 May 2016 in Kalabahi, Alor island",
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": NaN,
+      "Speakers": NaN
+    }
+  ],
   "id": "teiw1235",
   "language": "teiw1235",
   "name": "TWE_MK_2016_05_13_cultural features.xlsx",
-  "references": [],
+  "references": [
+    "Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.",
+    NaN,
+    "Data entry by Marian Klamer, 19 May 2016 in Kalabahi, Alor island",
+    "Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ",
+    "http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts",
+    NaN,
+    "Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).",
+    "Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual"
+  ],
   "source": [
     "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/TWE_MK_2016_05_13_cultural features.xlsx"
   ]

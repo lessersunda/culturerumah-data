@@ -1,14 +1,42 @@
 {
-  "abstract": "Typological features of keda1252. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/KED_MK_2015_05_21_cultural features questionnaire.xlsx'].",
-  "comment": "",
+  "abstract": "Typological features of keda1252. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/KED_MK_2015_05_21_cultural features questionnaire.xlsx', 'Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.', 'Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ', 'http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts', 'Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).', 'Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual'].",
   "created": "[Timestamp('2015-05-21 00:00:00')]",
   "creator": [
     "Marian Klamer"
   ],
+  "data_collection": [
+    {
+      "Date": "2015-05-21 00:00:00",
+      "Location": "Leubatang, Kedang, Lembata",
+      "Recorded by": "Marian Klamer, Yunus Sulistyono",
+      "Speaker code": 20,
+      "Speakers": "Jawas Muhamad"
+    },
+    {
+      "Date": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": 21,
+      "Speakers": "Daud Datok"
+    },
+    {
+      "Date": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": 22,
+      "Speakers": "Saiful Lawe Toda"
+    }
+  ],
   "id": "keda1252",
   "language": "keda1252",
   "name": "KED_MK_2015_05_21_cultural features questionnaire.xlsx",
-  "references": [],
+  "references": [
+    "Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.",
+    "Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ",
+    "http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts",
+    "Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).",
+    "Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual"
+  ],
   "source": [
     "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/KED_MK_2015_05_21_cultural features questionnaire.xlsx"
   ]

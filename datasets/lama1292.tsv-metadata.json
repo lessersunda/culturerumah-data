@@ -1,14 +1,53 @@
 {
-  "abstract": "Typological features of lama1292. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/HWA_MK_2015_05_14_cultural features questionnaire.xlsx'].",
-  "comment": "",
+  "abstract": "Typological features of lama1292. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/HWA_MK_2015_05_14_cultural features questionnaire.xlsx', 'Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.', 'Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ', 'http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts', 'Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).', 'Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual'].",
   "created": "[Timestamp('2015-05-14 00:00:00')]",
   "creator": [
     "Marian Klamer"
   ],
+  "data_collection": [
+    {
+      "Date": "2015-05-14 00:00:00",
+      "Location": "Hewa, Flores Timur",
+      "Recorded by": "Marian Klamer; Yunus Sulistyono",
+      "Speaker code": 1,
+      "Speakers": "Maria Ifoni Liwu",
+      "Unnamed: 5": NaN
+    },
+    {
+      "Date": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": 2,
+      "Speakers": "Ferfin Lia Olon Liwu",
+      "Unnamed: 5": NaN
+    },
+    {
+      "Date": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": 3,
+      "Speakers": "Andras Geron Liwu",
+      "Unnamed: 5": "on audio recording only"
+    },
+    {
+      "Date": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": 4,
+      "Speakers": "Paulus Ancis Liwu",
+      "Unnamed: 5": "on audio recording only"
+    }
+  ],
   "id": "lama1292",
   "language": "lama1292",
   "name": "HWA_MK_2015_05_14_cultural features questionnaire.xlsx",
-  "references": [],
+  "references": [
+    "Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.",
+    "Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ",
+    "http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts",
+    "Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).",
+    "Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual"
+  ],
   "source": [
     "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/HWA_MK_2015_05_14_cultural features questionnaire.xlsx"
   ]

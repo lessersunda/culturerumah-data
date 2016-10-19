@@ -1,14 +1,28 @@
 {
-  "abstract": "Typological features of lama1278. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_LI_MK_2015_05_24_cultural features questionnaire.xlsx'].",
-  "comment": "",
+  "abstract": "Typological features of lama1278. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_LI_MK_2015_05_24_cultural features questionnaire.xlsx', 'Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.', 'Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ', 'http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts', 'Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).', 'Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual'].",
   "created": "[Timestamp('2015-05-24 00:00:00')]",
   "creator": [
     "Marian Klamer"
   ],
+  "data_collection": [
+    {
+      "Date": "2015-05-24 00:00:00",
+      "Location": "Eputobi, Lewoingu, Flores Timur",
+      "Recorded by": "Marian Klamer, Yunus Sulustyono",
+      "Speaker code": 30,
+      "Speakers": "Bernardus Boli Manu"
+    }
+  ],
   "id": "lama1278",
   "language": "lama1278",
   "name": "LMH_LI_MK_2015_05_24_cultural features questionnaire.xlsx",
-  "references": [],
+  "references": [
+    "Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.",
+    "Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ",
+    "http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts",
+    "Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).",
+    "Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual"
+  ],
   "source": [
     "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_LI_MK_2015_05_24_cultural features questionnaire.xlsx"
   ]

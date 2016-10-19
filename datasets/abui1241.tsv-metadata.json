@@ -1,14 +1,189 @@
 {
-  "abstract": "Typological features of abui1241. Coded by George Saad  following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ABZ_TK_GS_2015_08_25_cultural features questionnaire.xlsx'].",
-  "comment": "",
+  "abstract": "Typological features of abui1241. Coded by George Saad  following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ABZ_TK_GS_2015_08_25_cultural features questionnaire.xlsx', 'Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.', 'Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ', 'http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts', 'Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).', 'Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual'].",
   "created": "[Timestamp('2015-08-25 00:00:00')]",
   "creator": [
     "George Saad "
   ],
+  "data_collection": [
+    {
+      "Data": "2015-06-30 00:00:00",
+      "Location": "Takalelang, Alor",
+      "Notes": "Main interview",
+      "Recorded by": "George Saad, Vicari Maufani (interviewer)",
+      "Speakers": "Arolus Maufani, Agustina Maufani",
+      "Speakers code": NaN
+    },
+    {
+      "Data": "2015-07-24 00:00:00",
+      "Location": "Takalelang, Alor",
+      "Notes": "Check problematic answers (CODE: Other speaker)",
+      "Recorded by": "George Saad ",
+      "Speakers": "Abner Yetimau",
+      "Speakers code": NaN
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    },
+    {
+      "Data": null,
+      "Location": null,
+      "Notes": null,
+      "Recorded by": null,
+      "Speakers": null,
+      "Speakers code": null
+    }
+  ],
   "id": "abui1241",
   "language": "abui1241",
   "name": "ABZ_TK_GS_2015_08_25_cultural features questionnaire.xlsx",
-  "references": [],
+  "references": [
+    "Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.",
+    "Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ",
+    "http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts",
+    "Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).",
+    "Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual"
+  ],
   "source": [
     "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ABZ_TK_GS_2015_08_25_cultural features questionnaire.xlsx"
   ]

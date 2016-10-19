@@ -1,14 +1,42 @@
 {
-  "abstract": "Typological features of adon1237. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_AD_MK_2015_05_18_cultural features questionnaire.xlsx'].",
-  "comment": "",
+  "abstract": "Typological features of adon1237. Coded by Marian Klamer following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_AD_MK_2015_05_18_cultural features questionnaire.xlsx', 'Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.', 'Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ', 'http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts', 'Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).', 'Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual'].",
   "created": "[Timestamp('2015-05-18 00:00:00')]",
   "creator": [
     "Marian Klamer"
   ],
+  "data_collection": [
+    {
+      "Date": "2015-05-18 00:00:00",
+      "Location": "Lewat, Adonara",
+      "Recorded by": "Marian Klamer, Yunus Sulistyono",
+      "Speaker code": 10,
+      "Speakers": "Elvis Albertus Bin Toni"
+    },
+    {
+      "Date": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": 11,
+      "Speakers": "Gabriel Kerong Ama"
+    },
+    {
+      "Date": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": 12,
+      "Speakers": "Thomas Sabon Luli"
+    }
+  ],
   "id": "adon1237",
   "language": "adon1237",
   "name": "LMH_AD_MK_2015_05_18_cultural features questionnaire.xlsx",
-  "references": [],
+  "references": [
+    "Volume 9, 70-73. Nijmegen: Max Planck Institute for Psycholinguistics.",
+    "Murdock, George Peter. Atlas of world cultures. (Ethnographic Atlas). ",
+    "http://lucy.ukc.ac.uk/cgi-bin/uncgi/ethnoatlas/atlas.vopts",
+    "Database for Indigenous Cultural Evolution (DICE)  (http://dice.missouri.edu).",
+    "Lindstr\u00f6m, Eva. 2004. Melanesian kinship and culture. In Asifa Majid (ed.), Field Manual"
+  ],
   "source": [
     "/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/LMH_AD_MK_2015_05_18_cultural features questionnaire.xlsx"
   ]

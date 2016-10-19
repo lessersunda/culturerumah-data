@@ -1,9 +1,45 @@
 {
   "abstract": "Typological features of adan1251. Coded by Hannah following ['/vol/winshare/Public/ResearchData/HUM/LUCL-KlamerVICI/Lesser Sunda Database/ADN_HC_2015_09_23_cultural features Adang.xlsx'].",
-  "comment": "",
   "created": "[Timestamp('2015-09-23 00:00:00')]",
   "creator": [
     "Hannah"
+  ],
+  "data_collection": [
+    {
+      "Data": "2015-09-23 00:00:00",
+      "Location": "Otvai",
+      "Recorded by": "Hannah",
+      "Speaker code": "WB",
+      "Speakers": "Welem Beli"
+    },
+    {
+      "Data": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "MA",
+      "Speakers": "Marlon Adang"
+    },
+    {
+      "Data": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "SA",
+      "Speakers": "Semuel Adang"
+    },
+    {
+      "Data": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "LA",
+      "Speakers": "L. Adang"
+    },
+    {
+      "Data": null,
+      "Location": NaN,
+      "Recorded by": NaN,
+      "Speaker code": "SD",
+      "Speakers": "Sem Dael"
+    }
   ],
   "id": "adan1251",
   "language": "adan1251",
